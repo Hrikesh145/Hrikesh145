@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hrikesh Kumar Hazra | MERN Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Hrikesh<span class="dot">.</span></a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#research" class="nav-link">Research</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-container">
+      <div class="hero-left reveal">
+        <div class="hero-badge">👋 Hi, I'm Hrikesh</div>
+        <h1 class="hero-title">
+          MERN Stack<br />
+          <span class="accent">Developer</span>
+        </h1>
+        <p class="hero-subtitle">
+          <span class="typed-text"></span><span class="cursor">|</span>
+        </p>
+        <p class="hero-desc">
+          CSE graduate from East West University, passionate about building full-stack web applications
+          and exploring machine learning research. Always learning, always building — let's connect!
+        </p>
+        <div class="hero-buttons">
+          <a href="docs/Hrikesh_Resume.pdf" download="Hrikesh_Kumar_Hazra_Resume.pdf" class="btn btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Resume
+          </a>
+          <a href="#projects" class="btn btn-ghost">View Projects</a>
+        </div>
+        <div class="social-row">
+          <a href="https://www.linkedin.com/in/hrikesh-kumar-hazra-a0a4b63b7/" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://github.com/Hrikesh145" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="mailto:hrikeshkumar145@gmail.com" class="social-icon" aria-label="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-right reveal">
+        <div class="photo-wrapper">
+          <img src="pictures/photo.jpeg" alt="Hrikesh Kumar Hazra" class="profile-photo" />
+          <div class="float-badge float-1">
+            <span>💻</span> 3+ Projects
+          </div>
+          <div class="float-badge float-2">
+            <span>📄</span> 2 Publications
+          </div>
+          <div class="float-badge float-3">
+            <span>🏆</span> Scout Award
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="Scroll down">
+      <div class="scroll-mouse">
+        <div class="scroll-dot"></div>
+      </div>
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Get to know me</span>
+        <h2 class="section-title">About <span class="accent">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <h3>A Passionate Developer &amp; Researcher</h3>
+          <p>
+            I'm a Computer Science and Engineering graduate from East West University, majoring in Data Science.
+            I'm passionate about coding, problem-solving, and learning new technologies.
+          </p>
+          <p>
+            I enjoy building full-stack applications, exploring backend systems, and turning ideas into clean,
+            functional, and user-friendly software. Beyond development, I'm also interested in machine learning
+            and computer vision research, with experience contributing to international conference papers.
+          </p>
+          <p>
+            Always experimenting, improving my skills, and looking for opportunities to build meaningful tech solutions.
+            <strong class="accent"> Always learning, always building!</strong>
+          </p>
+          <div class="about-info-grid">
+            <div class="info-item">
+              <span class="info-label">Location</span>
+              <span class="info-value">Dhaka, Bangladesh</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Email</span>
+              <a href="mailto:hrikeshkumar145@gmail.com" class="info-value info-link">hrikeshkumar145@gmail.com</a>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Degree</span>
+              <span class="info-value">BSc in CSE (Data Science)</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Availability</span>
+              <span class="info-value accent">Open to opportunities</span>
+            </div>
+          </div>
+        </div>
+        <div class="edu-col reveal">
+          <h3>Education</h3>
+          <div class="timeline-list">
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <span class="timeline-year">Feb 2022 – May 2026</span>
+                <h4>BSc in Computer Science &amp; Engineering</h4>
+                <p class="timeline-sub">Major: Data Science</p>
+                <p class="timeline-inst">East West University, Dhaka</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <span class="timeline-year">2020</span>
+                <h4>Higher Secondary Certificate (HSC)</h4>
+                <p class="timeline-inst">Dr. Mahabubur Rahman Molla College, Dhaka</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <span class="timeline-year">2018</span>
+                <h4>Secondary School Certificate (SSC)</h4>
+                <p class="timeline-inst">Shamsul Haque Khan School and College, Dhaka</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I work with</span>
+        <h2 class="section-title">Technical <span class="accent">Skills</span></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-card-icon">⌨️</div>
+          <h3>Programming Languages</h3>
+          <div class="badge-group">
+            <span class="badge">JavaScript</span>
+            <span class="badge">TypeScript</span>
+            <span class="badge">Python</span>
+            <span class="badge">Java</span>
+            <span class="badge">C</span>
+            <span class="badge">C++</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-card-icon">🎨</div>
+          <h3>Frontend</h3>
+          <div class="badge-group">
+            <span class="badge">React.js</span>
+            <span class="badge">HTML5</span>
+            <span class="badge">CSS3</span>
+            <span class="badge">Tailwind CSS</span>
+            <span class="badge">DaisyUI</span>
+            <span class="badge">Responsive Design</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-card-icon">⚙️</div>
+          <h3>Backend</h3>
+          <div class="badge-group">
+            <span class="badge">Node.js</span>
+            <span class="badge">Express.js</span>
+            <span class="badge">REST API</span>
+            <span class="badge">TanStack Query</span>
+            <span class="badge">Axios</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-card-icon">🗄️</div>
+          <h3>Databases</h3>
+          <div class="badge-group">
+            <span class="badge">MongoDB</span>
+            <span class="badge">Oracle SQL</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-card-icon">🤖</div>
+          <h3>Machine Learning &amp; AI</h3>
+          <div class="badge-group">
+            <span class="badge">TensorFlow</span>
+            <span class="badge">Scikit-learn</span>
+            <span class="badge">NumPy</span>
+            <span class="badge">Pandas</span>
+            <span class="badge">Matplotlib</span>
+            <span class="badge">Computer Vision</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-card-icon">🚀</div>
+          <h3>Tools &amp; Deployment</h3>
+          <div class="badge-group">
+            <span class="badge">Git</span>
+            <span class="badge">GitHub</span>
+            <span class="badge">Firebase</span>
+            <span class="badge">JWT</span>
+            <span class="badge">Netlify</span>
+            <span class="badge">Vercel</span>
+            <span class="badge">Figma</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I've built</span>
+        <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <div class="project-icon">🏥</div>
+            <div class="project-links">
+              <a href="https://medivo-db4d1.web.app" target="_blank" rel="noopener" class="proj-link" title="Live Demo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <a href="https://github.com/Hrikesh145/medivo-clint" target="_blank" rel="noopener" class="proj-link" title="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Medivo</h3>
+          <p class="project-subtitle">Medical Camp Management System</p>
+          <ul class="project-features">
+            <li>Full-stack medical camp platform with registration &amp; scheduling</li>
+            <li>User / Admin role-based access control</li>
+            <li>Firebase Auth + JWT + Stripe payment gateway</li>
+            <li>TanStack Query &amp; Axios for efficient data sync</li>
+          </ul>
+          <div class="badge-group project-stack">
+            <span class="badge badge-sm">MongoDB</span>
+            <span class="badge badge-sm">Express.js</span>
+            <span class="badge badge-sm">React.js</span>
+            <span class="badge badge-sm">Node.js</span>
+            <span class="badge badge-sm">Firebase</span>
+            <span class="badge badge-sm">Stripe</span>
+          </div>
+          <div class="project-btns">
+            <a href="https://medivo-db4d1.web.app" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live Demo</a>
+            <a href="https://github.com/Hrikesh145/medivo-clint" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">Client</a>
+            <a href="https://github.com/Hrikesh145/medivo-server" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">Server</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <div class="project-icon">🔍</div>
+            <div class="project-links">
+              <a href="https://ewu-findhub.web.app" target="_blank" rel="noopener" class="proj-link" title="Live Demo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <a href="https://github.com/Hrikesh145/ewu-find-hub-clint" target="_blank" rel="noopener" class="proj-link" title="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">EWUFindHub</h3>
+          <p class="project-subtitle">University Lost &amp; Found Platform</p>
+          <ul class="project-features">
+            <li>Campus-wide lost-and-found web application</li>
+            <li>Admin-gated confirmation &amp; multi-step claim verification</li>
+            <li>Real-time status updates, RESTful architecture</li>
+            <li>Role-based flows (User / Admin)</li>
+          </ul>
+          <div class="badge-group project-stack">
+            <span class="badge badge-sm">MongoDB</span>
+            <span class="badge badge-sm">Express.js</span>
+            <span class="badge badge-sm">React.js</span>
+            <span class="badge badge-sm">Node.js</span>
+            <span class="badge badge-sm">Firebase</span>
+            <span class="badge badge-sm">JWT</span>
+          </div>
+          <div class="project-btns">
+            <a href="https://ewu-findhub.web.app" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live Demo</a>
+            <a href="https://github.com/Hrikesh145/ewu-find-hub-clint" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">Client</a>
+            <a href="https://github.com/Hrikesh145/ewu-find-hub-server" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">Server</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <div class="project-icon">🌸</div>
+            <div class="project-links">
+              <a href="https://jasmin-event-explorer.netlify.app" target="_blank" rel="noopener" class="proj-link" title="Live Demo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <a href="https://github.com/Hrikesh145/jasmine-event-explorer" target="_blank" rel="noopener" class="proj-link" title="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Jasmine Event Explorer</h3>
+          <p class="project-subtitle">Event Management SPA</p>
+          <ul class="project-features">
+            <li>Responsive single-page event management application</li>
+            <li>Firebase Authentication with protected routes</li>
+            <li>Client-side routing &amp; component-based UI</li>
+            <li>Tailwind CSS &amp; DaisyUI for polished styling</li>
+          </ul>
+          <div class="badge-group project-stack">
+            <span class="badge badge-sm">React.js</span>
+            <span class="badge badge-sm">Tailwind CSS</span>
+            <span class="badge badge-sm">DaisyUI</span>
+            <span class="badge badge-sm">Firebase</span>
+            <span class="badge badge-sm">Netlify</span>
+          </div>
+          <div class="project-btns">
+            <a href="https://jasmin-event-explorer.netlify.app" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live Demo</a>
+            <a href="https://github.com/Hrikesh145/jasmine-event-explorer" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">GitHub</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section id="research" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Academic contributions</span>
+        <h2 class="section-title">Publications &amp; <span class="accent">Research</span></h2>
+      </div>
+      <div class="research-grid">
+        <div class="research-card reveal">
+          <div class="research-icon">📄</div>
+          <span class="status-badge status-published">Published</span>
+          <h3>Automated Detection and Classification of Electronic Components</h3>
+          <p class="conference">International Conference on Electrical, Computer and Communication Technologies</p>
+          <p class="conference-short">ECCT 2026</p>
+          <a href="https://drive.google.com/file/d/1pltHZ2Nh6v0hlltVIlDZ37RyYwxuiT6w/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-ghost btn-sm cert-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            View Certificate
+          </a>
+        </div>
+        <div class="research-card reveal">
+          <div class="research-icon">🌿</div>
+          <span class="status-badge status-accepted">Accepted</span>
+          <h3>MangoLeViT: Self-Supervised Vision Transformer for Mango Leaf Disease Classification</h3>
+          <p class="conference">1st International Conference on Power, Electronics, Communications, Computing, and Intelligent Infrastructure</p>
+          <p class="conference-short">PECCII 2026 &nbsp;·&nbsp; Accepted: 08 May 2026</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AWARDS -->
+  <section id="awards" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Recognition</span>
+        <h2 class="section-title">Honors &amp; <span class="accent">Awards</span></h2>
+      </div>
+      <div class="awards-grid">
+        <div class="award-card reveal">
+          <div class="award-icon">🏆</div>
+          <span class="award-year">2018</span>
+          <h3>President's Scout Award</h3>
+          <p>Highest national scout honor for exceptional leadership and community service</p>
+          <a href="https://drive.google.com/file/d/12tN_v0zbhr3zEluNEyNmJsoiooZLwJ48/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">View Certificate</a>
+        </div>
+        <div class="award-card reveal">
+          <div class="award-icon">🌟</div>
+          <span class="award-year">2018</span>
+          <h3>Bangladesh Scouts Community Development Award</h3>
+          <p>Recognized for outstanding leadership and positive community impact at the national level</p>
+          <a href="https://drive.google.com/file/d/19aBosx46HwMkETyGpQBxaIATaF2xVA32/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">View Certificate</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Let's talk</span>
+        <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <p class="contact-intro">
+            I'm currently open to new opportunities. Whether you have a project, a question,
+            or just want to say hi — my inbox is always open!
+          </p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon-wrap">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <span class="contact-label">Email</span>
+                <a href="mailto:hrikeshkumar145@gmail.com" class="contact-value">hrikeshkumar145@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon-wrap">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <span class="contact-label">Location</span>
+                <span class="contact-value">Dhaka, Bangladesh</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon-wrap">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </div>
+              <div>
+                <span class="contact-label">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/hrikesh-kumar-hazra-a0a4b63b7/" target="_blank" rel="noopener" class="contact-value">hrikesh-kumar-hazra</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon-wrap">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </div>
+              <div>
+                <span class="contact-label">GitHub</span>
+                <a href="https://github.com/Hrikesh145" target="_blank" rel="noopener" class="contact-value">Hrikesh145</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Project Collaboration" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-full">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>Designed &amp; built by <span class="accent">Hrikesh Kumar Hazra</span> &nbsp;·&nbsp; <span id="footerYear"></span></p>
+      <div class="footer-links">
+        <a href="https://github.com/Hrikesh145" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/hrikesh-kumar-hazra-a0a4b63b7/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:hrikeshkumar145@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
