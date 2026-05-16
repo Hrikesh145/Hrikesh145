@@ -113,33 +113,10 @@ I'm a **Computer Science & Engineering** graduate from **East West University** 
   <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=Hrikesh145&bg_color=0d1117&color=00d4ff&line=00d4ff&point=ffffff&area=true&area_color=004e6e&hide_border=true&custom_title=Hrikesh's%20Contribution%20Graph" />
 </div>
 
----
 
-## 🏆 GitHub Trophies
 
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Hrikesh145&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6&row=1&column=7" />
-</div>
 
----
 
-## 🌟 Featured Projects
-
-<div align="center">
-  <a href="https://github.com/Hrikesh145/medivo-clint">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Hrikesh145&repo=medivo-clint&hide_border=true&bg_color=0d1117&title_color=00d4ff&icon_color=00d4ff&text_color=c9d1d9" />
-  </a>
-  <a href="https://github.com/Hrikesh145/ewu-find-hub-clint">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Hrikesh145&repo=ewu-find-hub-clint&hide_border=true&bg_color=0d1117&title_color=00d4ff&icon_color=00d4ff&text_color=c9d1d9" />
-  </a>
-</div>
-<div align="center">
-  <a href="https://github.com/Hrikesh145/jasmine-event-explorer">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Hrikesh145&repo=jasmine-event-explorer&hide_border=true&bg_color=0d1117&title_color=00d4ff&icon_color=00d4ff&text_color=c9d1d9" />
-  </a>
-</div>
-
----
 
 ## 📚 Publications & Research
 
